@@ -5,13 +5,15 @@ modify pointer value
 */
 
 #include <stdio.h>
-#include <stdlib.h>
-
+#include <math.h>
 int main(){
-    float width,length,area;
-    printf("enter width,length");
-    scanf("%f%f",width,length);
-    area = width * length;
-    printf("the area is :%f",area);
-    return 0;
+    const float deg_to_rad = M_PI/ 180;
+    int deg = 0;
+    float radian;
+    printf("Degrees                     Sin(Degree)");
+    while (deg <= 90){
+        radian = deg * deg_to_rad;
+        printf("%d                              %f", deg, sin(radian));
+        deg += 2;
+    }
 }

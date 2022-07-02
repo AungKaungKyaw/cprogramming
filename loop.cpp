@@ -16,7 +16,7 @@ int main( ) {
         i++;
     }while(i<5);
     printf("\n");
-    for(int i = 0; i <10; i++){
+    for(int i = 0; i <5; i++){
         printf("hello-/");
     }
     return 0;
