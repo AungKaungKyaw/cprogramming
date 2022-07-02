@@ -20,6 +20,4 @@ int main(){
     result = rand() % (max_num + 1 - min_num) + min_num;  //random range equation
     printf("random number is : %d",result);
     printf("\n");
-    
-
 }
